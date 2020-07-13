@@ -16,7 +16,15 @@
             <li><a href="#">ABOUT</a></li>
             <li><a href="#">SEVICES</a></li>
             <li><a href="#">FREQENTLY QUESTIONS</a></li>
-            <li><a href="#">DROP DOWN</a></li>
+            <li id="nav">
+                <a href="#">DROP DOWN</a>
+                    <ul id="navUl">
+                        <li class="navLi"><a href=""">ABOUT US</a></li>
+                        <li class="navLi"><a href=""">FEATURES</a></li>
+                        <li class="navLi"><a href=""">FAQ</a></li>
+                        <li class="navLi"><a href=""">BLOG</a></li>
+                    </ul>    
+            </li>
             <li><a href="#">CONTACT US</a></li>
         </ul>
         </div>            
@@ -167,30 +175,39 @@
                         <a href="#">CONTACT US</a>
                     </div>
                     <div class="content04_right">
-                        <ul>
-                            <li>
-                                <span>First Common Question</span>
-                                <p></p>
+                        <ul id="accordionUl">
+                            <li class="accordionLi">
+                                <div>
+                                    <span>First Common Question</span>
+                                </div>
+                                <div class= "text">
+                                    <p>Suspendisse potenti. Ut dapibus leo ut massa vulputate semper. Pellentesque maximus lorem sed elit imperdiet mattis. Duis posuere mauris ut eros rutrum sodales. Aliquam erat volutpat.</p>
+                                </div>
                             </li>
-                            <li>
+                            <li class="accordionLi">
                                 <span>Second Common Question</span>
-                                <p></p>
+                                <p>Duis vulputate porttitor urna sit amet pretium. Phasellus sed pulvinar eros, condimentum consequat ex. Suspendisse potenti.</p>
+                                <p>Pellentesque maximus lorem sed elit imperdiet mattis. Duis posuere mauris ut eros rutrum sodales. Aliquam erat volutpat.</p>
                             </li>
-                            <li>
+                            <li class="accordionLi">
                                 <span>Third Common Question</span>
-                                <p></p>
+                                <p>Sed odio elit, cursus sed consequat at, rutrum eget augue. Cras ac eros iaculis, tempor quam sit amet, scelerisque mi. Quisque eu risus eget nunc porttitor vestibulum at a ante.</p>
+                                <p>Praesent ut placerat turpis, vel pellentesque dolor. Sed rutrum eleifend tortor, eu luctus orci sagittis in. In blandit fringilla mollis.</p>
                             </li>
-                            <li>
+                            <li class="accordionLi">
                                 <span>Fourth Common Question</span>
-                                <p></p>
+                                <p>Proin feugiat ante ut vulputate rutrum. Nam quis erat turpis. Nullam maximus pharetra lorem, eu condimentum est iaculis ut. Pellentesque mattis ultrices dignissim.</p>
+                                <p>Etiam et enim finibus, feugiat massa efficitur, finibus sapien. Sed cursus lacus quis arcu scelerisque, eget ornare risus maximus. Aenean non lectus id odio rhoncus pharetra.</p>
                             </li>
-                            <li>
+                            <li class="accordionLi">
                                 <span>Fifth Common Question</span>
-                                <p></p>
+                                <p>Phasellus eu purus ornare, eleifend orci nec, egestas nulla. Sed sed aliquet sapien. Proin placerat, ipsum eu posuere blandit, tellus quam consectetur nisi, id sollicitudin diam ex at nisi.</p>
+                                <p>Aenean fermentum eget turpis egestas semper. Sed finibus mollis venenatis. Praesent at sem in massa iaculis pharetra.</p>
                             </li>
-                            <li>
+                            <li class="accordionLi">
                                 <span>Six Common Question</span>
-                                <p></p>
+                                <p>Quisque aliquet ipsum ut magna rhoncus, euismod lacinia elit rhoncus. Sed sapien elit, mollis ut ultricies quis, fermentum nec ante.</p>
+                                <p>Sed nec ex nec tortor fermentum sollicitudin id ut ligula. Ut sagittis rutrum lectus, non sagittis ante euismod eu.</p>
                             </li>
                         </ul>
                     </div>
@@ -225,5 +242,7 @@
             </div>
         </div>
     </footer>
+    <script src="assets/js/dropdown.js"></script>
+    <script src="assets/js/accordion.js"></script>
     </body>
 </html>

@@ -61,7 +61,7 @@ nav .main_nav li a:hover{
 
 
 main{width:100%;}
-.welcome{ 
+.welcome{
     background-image: url(../images/banner-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -261,7 +261,20 @@ main{width:100%;}
     flex: 1 1 50%;
     background-color: #f7f7f7;
 }
-.content04_right span {
+.content04_right .accordionUl{
+    height:100%;
+}
+.content04_right .accordionLi{
+    padding:1rem;
+    font-size:1.2rem;
+}
+.content04_right .accordionLi span{
+    cursor: pointer;
+}
+.content04_right .accordionLi p{
+    font-size:15px;
+    padding:15px 0;
+    color:var(--font_color);
 }
 
 
@@ -362,3 +375,36 @@ i{color:white;}
 .footer_right li a:hover{
     color:var(--primary);
 }
+
+/*JS*/
+.nav{
+    position: relative;
+
+}
+#navUl .navLi a{
+    color: var(--font_color);
+}
+#navUl .navLi a:hover{
+    color:var(--red);
+}
+#navUl{
+    position: absolute;
+    background-color: #ffffff;
+}
+.navLi{
+    margin-top:10px;
+    width:200px;
+    display:none;
+    transition: 1.5s ease-out;
+    -webkit-transition: 1.5s ease-out;
+}
+.block{
+    display:block;
+}
+.is-open{
+    display:block;
+}
+
+.accordionLi p{
+    display:none;
+} 

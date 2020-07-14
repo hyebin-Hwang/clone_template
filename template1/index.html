@@ -4,8 +4,9 @@
     <script src="https://kit.fontawesome.com/e66429a8fe.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>template01</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=10c98391669615eb9d0a20086c1c3578"></script>
 </head>
 <body>
     <nav>
@@ -176,38 +177,64 @@
                     </div>
                     <div class="content04_right">
                         <ul id="accordionUl">
-                            <li class="accordionLi">
-                                <div>
-                                    <span>First Common Question</span>
+                            <li class="accordion-item">
+                                <div class="accordion_headerJs">
+                                    First Common Question
+                                    <span><i class="fas fa-chevron-right"></i></span>
                                 </div>
-                                <div class= "text">
-                                    <p>Suspendisse potenti. Ut dapibus leo ut massa vulputate semper. Pellentesque maximus lorem sed elit imperdiet mattis. Duis posuere mauris ut eros rutrum sodales. Aliquam erat volutpat.</p>
+                                <div class="panel_container">
+                                    <p class="panel">Suspendisse potenti. Ut dapibus leo ut massa vulputate semper. Pellentesque maximus lorem sed elit imperdiet mattis. Duis posuere mauris ut eros rutrum sodales. Aliquam erat volutpat.</p>
+                                </div>                            
+                            </li>
+                            <li class="accordion-item">
+                                <div class="accordion_headerJs">
+                                    Second Common Question
+                                    <span><i class="fas fa-chevron-right"></i></span>
+                                </div>
+                                <div class="panel_container">
+                                    <p class="panel">Duis vulputate porttitor urna sit amet pretium. Phasellus sed pulvinar eros, condimentum consequat ex. Suspendisse potenti.
+                                    <br><br><br>Pellentesque maximus lorem sed elit imperdiet mattis. Duis posuere mauris ut eros rutrum sodales. Aliquam erat volutpat.</p>
                                 </div>
                             </li>
-                            <li class="accordionLi">
-                                <span>Second Common Question</span>
-                                <p>Duis vulputate porttitor urna sit amet pretium. Phasellus sed pulvinar eros, condimentum consequat ex. Suspendisse potenti.</p>
-                                <p>Pellentesque maximus lorem sed elit imperdiet mattis. Duis posuere mauris ut eros rutrum sodales. Aliquam erat volutpat.</p>
+                            <li class="accordion-item">
+                                <div class="accordion_headerJs">
+                                    Third Common Question
+                                    <span><i class="fas fa-chevron-right"></i></span>
+                                </div>
+                                <div class="panel_container">
+                                    <p class="panel">Sed odio elit, cursus sed consequat at, rutrum eget augue. Cras ac eros iaculis, tempor quam sit amet, scelerisque mi. Quisque eu risus eget nunc porttitor vestibulum at a ante.
+                                    <br><br><br>Praesent ut placerat turpis, vel pellentesque dolor. Sed rutrum eleifend tortor, eu luctus orci sagittis in. In blandit fringilla mollis.</p>
+                                </div>
                             </li>
-                            <li class="accordionLi">
-                                <span>Third Common Question</span>
-                                <p>Sed odio elit, cursus sed consequat at, rutrum eget augue. Cras ac eros iaculis, tempor quam sit amet, scelerisque mi. Quisque eu risus eget nunc porttitor vestibulum at a ante.</p>
-                                <p>Praesent ut placerat turpis, vel pellentesque dolor. Sed rutrum eleifend tortor, eu luctus orci sagittis in. In blandit fringilla mollis.</p>
+                            <li class="accordion-item">
+                                <div class="accordion_headerJs">
+                                    Fourth Common Question
+                                    <span><i class="fas fa-chevron-right"></i></span>
+                                </div>
+                                <div class="panel_container">
+                                    <p class="panel">Proin feugiat ante ut vulputate rutrum. Nam quis erat turpis. Nullam maximus pharetra lorem, eu condimentum est iaculis ut. Pellentesque mattis ultrices dignissim.
+                                    <br><br><br>Etiam et enim finibus, feugiat massa efficitur, finibus sapien. Sed cursus lacus quis arcu scelerisque, eget ornare risus maximus. Aenean non lectus id odio rhoncus pharetra.</p>
+                                </div>
                             </li>
-                            <li class="accordionLi">
-                                <span>Fourth Common Question</span>
-                                <p>Proin feugiat ante ut vulputate rutrum. Nam quis erat turpis. Nullam maximus pharetra lorem, eu condimentum est iaculis ut. Pellentesque mattis ultrices dignissim.</p>
-                                <p>Etiam et enim finibus, feugiat massa efficitur, finibus sapien. Sed cursus lacus quis arcu scelerisque, eget ornare risus maximus. Aenean non lectus id odio rhoncus pharetra.</p>
+                            <li class="accordion-item">
+                                <div class="accordion_headerJs">
+                                    Fifth Common Question
+                                    <span><i class="fas fa-chevron-right"></i></span>
+                                </div>
+                                <div class="panel_container">
+                                    <p class="panel">Phasellus eu purus ornare, eleifend orci nec, egestas nulla. Sed sed aliquet sapien. Proin placerat, ipsum eu posuere blandit, tellus quam consectetur nisi, id sollicitudin diam ex at nisi.
+                                    <br><br><br>Aenean fermentum eget turpis egestas semper. Sed finibus mollis venenatis. Praesent at sem in massa iaculis pharetra.</p>
+                                </div>
                             </li>
-                            <li class="accordionLi">
-                                <span>Fifth Common Question</span>
-                                <p>Phasellus eu purus ornare, eleifend orci nec, egestas nulla. Sed sed aliquet sapien. Proin placerat, ipsum eu posuere blandit, tellus quam consectetur nisi, id sollicitudin diam ex at nisi.</p>
-                                <p>Aenean fermentum eget turpis egestas semper. Sed finibus mollis venenatis. Praesent at sem in massa iaculis pharetra.</p>
-                            </li>
-                            <li class="accordionLi">
-                                <span>Six Common Question</span>
-                                <p>Quisque aliquet ipsum ut magna rhoncus, euismod lacinia elit rhoncus. Sed sapien elit, mollis ut ultricies quis, fermentum nec ante.</p>
-                                <p>Sed nec ex nec tortor fermentum sollicitudin id ut ligula. Ut sagittis rutrum lectus, non sagittis ante euismod eu.</p>
+                            <li class="accordion-item">
+                                <div class="accordion_headerJs">
+                                    Six Common Question
+                                    <span><i class="fas fa-chevron-right"></i></span>
+                                </div>
+                                <div class="panel_container">
+                                    <p class="panel">Quisque aliquet ipsum ut magna rhoncus, euismod lacinia elit rhoncus. Sed sapien elit, mollis ut ultricies quis, fermentum nec ante.
+                                    <br><br><br>Sed nec ex nec tortor fermentum sollicitudin id ut ligula. Ut sagittis rutrum lectus, non sagittis ante euismod eu.</p>
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -215,7 +242,9 @@
             </div>  
         </div>
         <div class="content05">
-            <div class="content05_left"></div>
+            <div Id="map" class="content05_left">
+
+            </div>
             <div class="content05_right">
                 <div class="content05_right_container">
                     <input type="text" id="name"placeholder="Full name" >
@@ -242,6 +271,15 @@
             </div>
         </div>
     </footer>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=49999e25054f0ed8b3e494276acc681f"></script>
+	<script>
+		const container = document.getElementById('map');
+		const options = {
+			center: new kakao.maps.LatLng(37.5327685,126.726162),
+			level: 3
+		};
+		const map = new kakao.maps.Map(container, options);
+	</script>
     <script src="assets/js/dropdown.js"></script>
     <script src="assets/js/accordion.js"></script>
     </body>

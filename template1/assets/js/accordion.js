@@ -1,25 +1,19 @@
-const ulAccodion = document.getElementById(`accordionUl`);
-const liAccodion = ulAccodion.querySelectorAll(`.accordionLi`);
-const lis = document.querySelector(`.accordionLi`);
-const OPEN = `is-open`;
-//현재 p가 display:none; 클릭시 클레스 추가
-// class: is-open display:block
-// is-open 이 없다면 추가하기!
-function openAccordion(e){
-    console.log(e)
-}
+const accHeader = document.querySelectorAll(`.accordion_headerJs`);
 
+accHeader.forEach(accHeader =>{
+    accHeader.addEventListener("click",event =>{
+        const activeHeader = document.querySelector(`.accordion_headerJs.active`);
+        if(activeHeader && activeHeader !== accHeader){
+            activeHeader.classList.toggle("active");
+            activeHeader.nextElementSibling.style.maxHeight = 0;
+        }
 
-
-function handleAccordion(){
-    liAccodion.forEach((e)=>{
-        e.addEventListener("click",openAccordion)
+        accHeader.classList.toggle("active");
+        const itemBody = accHeader.nextElementSibling;
+        if(accHeader.classList.contains("active")){
+            itemBody.style.maxHeight = itemBody.scrollHeight + "px";
+        }else {
+            itemBody.style.maxHeight = 0;
+        }
     })
-}
-handleAccordion();
-
-
-console.clear();
-console.log(ulAccodion)
-console.log(liAccodion)
-console.log(lis)
+})

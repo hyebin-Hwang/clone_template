@@ -5,30 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>template01</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=10c98391669615eb9d0a20086c1c3578"></script>
+    <link rel="stylesheet" href="assets/css/style.css">   
+    <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 <body>
-    <nav>
+    <nav id="scrollJs">
         <div class="main_nav">            
-        <h1><a href="#">ART FACTORY</a></h1>
-        <ul class="nav_ul">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">SEVICES</a></li>
-            <li><a href="#">FREQENTLY QUESTIONS</a></li>
-            <li id="nav">
-                <a href="#">DROP DOWN</a>
-                    <ul id="navUl">
-                        <li class="navLi"><a href=""">ABOUT US</a></li>
-                        <li class="navLi"><a href=""">FEATURES</a></li>
-                        <li class="navLi"><a href=""">FAQ</a></li>
-                        <li class="navLi"><a href=""">BLOG</a></li>
+            <h1><a href="#">ART FACTORY</a></h1>
+            <ul class="nav_ul" id="navJs">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">SEVICES</a></li>
+                <li><a href="#">FREQENTLY QUESTIONS</a></li>
+                <li id="dropdownJs"><a href="#">DROP DOWN</a>
+                    <ul id="dropUl" class="submenu">
+                        <li class="dropLi"><a href="#">ABOUT US</a></li>
+                        <li class="dropLi"><a href="#">FEATURES</a></li>
+                        <li class="dropLi"><a href="#">FAQ</a></li>
+                        <li class="dropLi"><a href="#">BLOG</a></li>
                     </ul>    
-            </li>
-            <li><a href="#">CONTACT US</a></li>
-        </ul>
-        </div>            
+                </li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+            <span class="menu" id="menu">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </span>
+        </div>         
     </nav>
     <main>
         <div class="welcome">
@@ -52,8 +56,7 @@
                     <img src="assets/images/left-image.png" alt="">
                 </div>
                 <div class="content01_text">
-                    <h2>Vivamus sodales nisi id ante</h2>
-                    <h2>molestie venenatis</h2>
+                    <h2>Vivamus sodales nisi id ante molestie venenatis</h2>
                     <p>This template is <span>last updated on 20 August 2019</span> for main menu drop-down arrow and sub menu text color. Duis auctor dolor eu scelerisque vestibulum. Vestibulum lacinia, nisl sit amet tristique condimentum.</p>
                     <p>Sed a consequat velit. Morbi lectus sapien, vestibulum et sapien sit amet, ultrices malesuada odio. Donec non quam euismod, mattis dui a, ultrices nisi.</p>
                     <a href="#">DISCOVER MORE</a> 
@@ -103,7 +106,10 @@
             </div>        
         </div>
         <div class="content03">
-            <ul>
+            <div class="slide_container">
+            <div class="slide_outer"> 
+            <div class="slide_out">
+            <ul id = "slideUl">
                 <li>
                     <a href="#"><img src="assets/images/service-icon-01.png" alt=""></a>
                     <h3>First Box Service</h3>
@@ -123,42 +129,44 @@
                     <a href=""></a>
                 </li>
                 <li>
-                <a href=""></a>
-                <h3></h3>
-                <p></p>
-                <a href=""></a>
+                    <a href="#"><img src="assets/images/service-icon-01.png" alt=""></a>
+                    <h3>Fourth Box Service</h3>
+                    <p>Aenean vulputate massa sed neque consectetur, ac fringilla quam aliquet. Sed a enim nec eros tempor cursus at id libero.</p>
+                    <a href="#"></a>
                 </li>
                 <li>
-                <a href=""></a>
-                <h3></h3>
-                <p></p>
-                <a href=""></a>
+                    <a href=""><img src="assets/images/service-icon-02.png" alt=""></a>
+                    <h3>Fifth Box Service</h3>
+                    <p>Pellentesque vitae urna ut nisi viverra tristique quis at dolor. In non sodales dolor, id egestas quam. Aliquam erat volutpat. </p>
+                    <a href=""></a>
                 </li>
                 <li>
-                <a href=""></a>
-                <h3></h3>
-                <p></p>
-                <a href=""></a>
+                    <a href=""><img src="assets/images/service-icon-03.png" alt=""></a>
+                    <h3>Sixth Box Service</h3>
+                    <p>Quisque finibus libero augue, in ultrices quam dictum id. Aliquam quis tellus sit amet urna tincidunt bibendum.</p>
+                    <a href=""></a>
+                </li>                <li>
+                    <a href="#"><img src="assets/images/service-icon-01.png" alt=""></a>
+                    <h3>Seventh Box Service</h3>
+                    <p>Aenean vulputate massa sed neque consectetur, ac fringilla quam aliquet. Sed a enim nec eros tempor cursus at id libero.</p>
+                    <a href="#"></a>
                 </li>
                 <li>
-                <a href=""></a>
-                <h3></h3>
-                <p></p>
-                <a href=""></a>
+                    <a href=""><img src="assets/images/service-icon-02.png" alt=""></a>
+                    <h3>Eighth Box Service</h3>
+                    <p>Pellentesque vitae urna ut nisi viverra tristique quis at dolor. In non sodales dolor, id egestas quam. Aliquam erat volutpat. </p>
+                    <a href=""></a>
                 </li>
                 <li>
-                <a href=""></a>
-                <h3></h3>
-                <p></p>
-                <a href=""></a>
-                </li>
-                <li>
-                <a href=""></a>
-                <h3></h3>
-                <p></p>
-                <a href=""></a>
+                    <a href=""><img src="assets/images/service-icon-03.png" alt=""></a>
+                    <h3>Ninth Box Service</h3>
+                    <p>Quisque finibus libero augue, in ultrices quam dictum id. Aliquam quis tellus sit amet urna tincidunt bibendum.</p>
+                    <a href=""></a>
                 </li>
             </ul>
+            </div>
+            </div>  
+            </div>
         </div>
         <div class="content04">
             <div class="content04_container">
@@ -270,17 +278,47 @@
                 </ul>
             </div>
         </div>
+      
     </footer>
-    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=49999e25054f0ed8b3e494276acc681f"></script>
+    <script type="text/javascript" src="http://dapi.kakao.com/v2/maps/sdk.js?appkey=49999e25054f0ed8b3e494276acc681f"></script>
 	<script>
 		const container = document.getElementById('map');
 		const options = {
-			center: new kakao.maps.LatLng(37.5327685,126.726162),
+			center: new kakao.maps.LatLng(37.532636, 126.736046),
 			level: 3
 		};
-		const map = new kakao.maps.Map(container, options);
+        const map = new kakao.maps.Map(container, options);
+
+// 지도를 클릭한 위치에 표출할 마커입니다
+        var marker = new kakao.maps.Marker({ 
+    // 지도 중심좌표에 마커를 생성합니다 
+        position: map.getCenter() 
+    }); 
+// 지도에 마커를 표시합니다
+        marker.setMap(map);
+
+// 지도에 클릭 이벤트를 등록합니다
+// 지도를 클릭하면 마지막 파라미터로 넘어온 함수를 호출합니다
+            kakao.maps.event.addListener(map, 'click', function(mouseEvent) {        
+    
+    // 클릭한 위도, 경도 정보를 가져옵니다 
+            var latlng = mouseEvent.latLng; 
+    
+    // 마커 위치를 클릭한 위치로 옮깁니다
+            marker.setPosition(latlng);
+            });
+            var iwContent = '<div style="padding:2px;">계절황기</div>'
+            iwPosition = new kakao.maps.LatLng(37.532636, 126.736046);
+            var infowindow = new kakao.maps.InfoWindow({
+    position : iwPosition, 
+    content : iwContent 
+});
+infowindow.open(map, marker); 
 	</script>
     <script src="assets/js/dropdown.js"></script>
     <script src="assets/js/accordion.js"></script>
+    <script src="assets/js/hambuk.js"></script>
+    <script src="assets/js/scroll.js"></script>
+    <script src="assets/js/slide.js"></script>
     </body>
 </html>

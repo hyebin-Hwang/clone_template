@@ -7,7 +7,6 @@ accHeader.forEach(accHeader =>{
             activeHeader.classList.toggle("active");
             activeHeader.nextElementSibling.style.maxHeight = 0;
         }
-
         accHeader.classList.toggle("active");
         const itemBody = accHeader.nextElementSibling;
         if(accHeader.classList.contains("active")){

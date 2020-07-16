@@ -1,29 +1,36 @@
 //li클릭시 none 이였는거에 display:block추가
 //
-const navLi = document.getElementById(`nav`);
-const subUl = navLi.querySelector(`#navUl`);
-const subLi = navLi.querySelectorAll(`.navLi`);
+const dropContainer = document.getElementById(`dropdownJs`);
+const dropUl = dropContainer.querySelector(`#dropUl`);
+const dropList = dropContainer.querySelectorAll(`.dropLi`);
 const BLOCK = `block`;
 
 function handleOver(){
-    subLi.forEach((e)=>{
-        e.classList.add(BLOCK)
-    })
+    dropUl.classList.add(BLOCK)
 }
 function stopOver(){
-    subLi.forEach((e)=>{
-        e.classList.remove(BLOCK)
-    })
+    dropUl.classList.remove(BLOCK)
 }
 
-function ClickList(){
-    navLi.addEventListener("mouseover",handleOver)
-    navLi.addEventListener("mouseout",stopOver)
+function clickToggle(){
+    dropUl.classList.toggle(BLOCK)
 }
 
-function init(){
-    ClickList();
+function matchEvent(e) {
+    if (e.matches) {
+    dropContainer.addEventListener(`click`, clickToggle)
+    dropContainer.removeEventListener(`mouseover`, handleOver)
+    dropContainer.removeEventListener(`mouseout`, stopOver)
+    } else {
+    dropContainer.removeEventListener(`click`, clickToggle)
+    dropContainer.addEventListener(`mouseover`, handleOver)
+    dropContainer.addEventListener(`mouseout`, stopOver)
+    }
 }
-init();
 
-
+function clickList() {
+    const mq = window.matchMedia("screen and (max-width:1024px)");
+    matchEvent(mq);
+    mq.addListener(matchEvent);
+}
+clickList();

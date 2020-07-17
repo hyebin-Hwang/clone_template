@@ -232,4 +232,40 @@
     }
 }
 
+@media (max-width: 1395px){
+    .content03{
+        display:block;
+    }
+    .leftbtn-container{
+        left:40%;
+        bottom:5%;
+    }
+    .rightbtn-container{
+        right:40%;
+        bottom:5%;
+    }
+}
+
+@media (max-width: 1024px){
+    .slide_container{
+        max-width: var(--third_width);
+    }
+    .content03 li{
+        width:220px;
+    }
+}
+@media (max-width: 700px){
+    .slide_container{
+        max-width: var(--fourth_width);
+    }
+    .content03 li{
+        width:240px;
+    }
+    .leftbtn-container{
+        left:30%;
+    }
+    .rightbtn-container{
+        right:30%;
+    }
+}
 

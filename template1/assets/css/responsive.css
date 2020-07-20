@@ -18,15 +18,14 @@
     }
 }
 @media (max-width: 1025px){
-    .main_nav{
-        max-width: var(--third_width);
-    }
-    .welcome_container{
+    .main_nav, .welcome_container, .content01_text, .content01_imgbox, .content02, .content04,  footer {
         max-width: var(--third_width);
     }
     .nav_ul{
         display:none;
     }
+
+
     .welcome_text h1{
         font-size:45px;
         font-weight: 800;
@@ -38,37 +37,31 @@
         font-size:35px;
         font-weight: 500;
     }
+
+
     .content01_container{
         display:block;
-
     }
     .content01_text{
         margin:0 auto;
-        max-width:var(--third_width);
     }
     .content01_imgbox{
         margin:0 auto;
-        max-width:var(--third_width);
     }
     
 
-    .content02{
-        max-width:var(--third_width);
-    }
+
     .content02_container{
         display:block
     }
     .content02_text_container{
         margin:30px 0;
     }
-    .content04{
-        max-width:var(--third_width);
-    }
+
+
+
     .content04_left p{
         font-size:14px;
-    }
-    footer{
-        max-width: var(--third_width);
     }
     footer p {
         text-align: center;
@@ -126,6 +119,8 @@
     .welcome_imgbox{
         padding:0;
     }
+
+
     .content04_sub_container{
         display:block;
     }
@@ -135,9 +130,13 @@
     .content04_top h2{
         font-size:40px;
     }
+
+
     .content05{
         display:block;
     }
+
+
     #map{
         width:100%;
         margin-bottom:30px;
@@ -211,11 +210,12 @@
     .dropLi{
         width:100%;
         border-top:1px solid #eee;
-        margin-top:10px;
+        margin-top: 0;
     }
     #dropUl{
         position: relative;
     }
+
     .main_nav a{
         height:50px;
         line-height: 50px;
@@ -246,6 +246,8 @@
     }
 }
 
+/*SLIDER*/
+
 @media (max-width: 1024px){
     .slide_container{
         max-width: var(--third_width);
@@ -266,6 +268,14 @@
     }
     .rightbtn-container{
         right:30%;
+    }
+}
+@media (max-width: 500px){
+    .slide_container{
+        max-width:var(--five_width);
+    }
+    .content03 li{
+        width:260px;
     }
 }
 

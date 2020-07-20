@@ -1,5 +1,3 @@
-//li클릭시 none 이였는거에 display:block추가
-//
 const dropContainer = document.getElementById(`dropdownJs`);
 const dropUl = dropContainer.querySelector(`#dropUl`);
 const dropList = dropContainer.querySelectorAll(`.dropLi`);

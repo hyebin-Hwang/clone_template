@@ -180,28 +180,39 @@ main{
     li{
         width:100%;
         flex:0 0 33%;
+        height:300px;
+        margin-bottom:4px;
         display:flex;
-        margin-bottom:8px;
         position: relative;
         img{
             width:100%;
             height:300px;
+            &:hover{
+                opacity: 0.4;
+            }
         }
         a{
+       
+        }
             span{
                 z-index: 1;
                 position: absolute;
                 top:50%;
                 left:50%;
+                color:white;
                 display:none;
             }
+            
     }
-}
+    .mag_active{
+        display:block
+    }
 }
 .content03{
     margin-top: 100px;
     margin-bottom:100px;
     position: relative;
+    overflow: hidden;
     h3{
         text-align: center;
         font-size:40px;
@@ -272,7 +283,18 @@ main{
         .dot:hover {
             background-color: $primary_color;
         }
-    
+       
+        #slider-js{
+            width:1480px;
+            display:flex;
+            position: relative;
+            transition: all .3s;
+            li{
+                width:$primary-width;
+            }
+        }
+
+
 }
 .content04{
     .content04_text {
@@ -343,6 +365,16 @@ main{
             h3{font-size:25px;margin-bottom:25px;}
             p{margin-bottom:10px;font-family: $p_font;}
         }
+    }
+    .content05_blog{
+        display:none;
+    }
+    .blog_active{
+        display:block;
+    }
+    .order_active{
+        background-color: $primary_color;
+        border-radius: 20px;
     }
     .content05_nav{
         display:flex;
@@ -434,5 +466,17 @@ footer{
         text-align: center;
     }
 }
-
-
+ .active{
+background-color: $primary_color!important;
+}
+img{
+    opacity: 0.1;
+    transition: all 0.3s;
+}
+.fade {
+    opacity: 1;
+    transition: all 0.5s;
+}
+html {
+    scroll-behavior: smooth;
+}

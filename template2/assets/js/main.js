@@ -1,3 +1,5 @@
+"use strict"
+
 const ControlTab = (function(){
     const openBtn = document.getElementById("menu");
     const closeBtn = document.querySelector(".change");
@@ -8,8 +10,18 @@ const ControlTab = (function(){
     closeBtn.addEventListener("click",()=>{
         hideNav.style.width = "0px";
     })
-}())
 
+    const matchTab = (e)=>{
+        if(e.matches){
+        }
+        else{
+            hideNav.style.width = "0px";
+        }
+    }
+
+    const tabMq =window.matchMedia("screen and (max-width:990px)");
+    tabMq.addListener(matchTab);
+}())
 
 const Slider = (function(){
     const rightBtn = document.getElementById("rightbtn");
@@ -22,7 +34,6 @@ const Slider = (function(){
     const ACTIVE = "active";
     let sliderWidth = slider[0].offsetWidth;
     let count = 0;
-    sliderBox.style.right = sliderWidth*count + 'px';
     dot[count].classList.add(ACTIVE);
 
     const currentSlider = (number)=>{
@@ -60,9 +71,21 @@ const Slider = (function(){
     dot.forEach((e)=>{e.addEventListener("click",clickDot)});
     leftBtn.addEventListener("click",clickLeft);
     rightBtn.addEventListener("click",clickRight);
+
+    const matchSlide = (e)=>{
+        if(e.matches){
+            sliderBox.style.right = sliderWidth*count + 'px';
+        }else{
+            sliderBox.style.right = sliderWidth*count + 'px';
+        }
+    }
+
+    const slideMq =  window.matchMedia("screen and (max-width:800px)");
+    matchSlide(slideMq);
+    slideMq.addListener(matchSlide)
 }())
 
-const handleBlogList = (function(){
+const HandleBlogList = (function(){
     const blogBox = document.querySelectorAll(".content05_blog")
     const orderBox = document.getElementById("order-js");
     const orderList = orderBox.querySelectorAll("li");
@@ -121,11 +144,10 @@ const ImagePopup = (function(){
 
     const clickImage = (e)=>{
         e.preventDefault();
-        console.log(e.target.src)
         const imgSrc = e.target.src;
-        const imgWidth = e.target.width+30;
+        const imgWidth = e.target.width+50;
         const imgHeight = e.target.hieght + 30;
-        window.open(`${imgSrc}`, 'img', `width=${imgWidth}, height=${imgHeight}, left=50%, top=50%`)
+        window.open(`${imgSrc}`, 'img', `width=${imgWidth}, height=${imgHeight}, left=0, top=0`)
     }
 
     images.forEach((e)=>{
@@ -154,5 +176,6 @@ const ImageMagnifer = (function(){
         })
     })
 }())
+
 
 

@@ -488,6 +488,8 @@ main {
 
 .content05 .blog_active {
   display: block;
+  -webkit-animation-name: fadeIn 3s;
+          animation-name: fadeIn 3s;
 }
 
 .content05 .order_active {

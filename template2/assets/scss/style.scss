@@ -30,6 +30,7 @@ body{
     font-size:$main_fontsize;
 }
 
+
 .container{
     display:flex;
     width:100%;
@@ -371,6 +372,7 @@ main{
     }
     .blog_active{
         display:block;
+        animation-name: fadeIn 3s;
     }
     .order_active{
         background-color: $primary_color;
@@ -466,7 +468,7 @@ footer{
         text-align: center;
     }
 }
- .active{
+.active{
 background-color: $primary_color!important;
 }
 img{
@@ -480,3 +482,5 @@ img{
 html {
     scroll-behavior: smooth;
 }
+
+

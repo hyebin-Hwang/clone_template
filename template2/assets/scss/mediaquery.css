@@ -51,6 +51,9 @@
     max-width: 540px;
     margin: 0 auto;
   }
+  .content03 #slider-js li {
+    max-width: 540px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -59,6 +62,9 @@
   }
   .s_content02 {
     max-width: 440px;
+  }
+  .content03 #slider-js li {
+    max-width: 340px;
   }
   .content05 .content05_blog li {
     display: block;

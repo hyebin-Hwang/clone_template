@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+    <script src="https://kit.fontawesome.com/e66429a8fe.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav_container container">
+            <ul class="main_nav">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">PROPERTY</a></li>
+                <li><a href="#">AGETS</a></li>
+                <li><a href="#">NEWS</a></li>
+                <li><a href="#">PAGES</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+            <div class="sub_menu">
+            <div class="language">
+                <img src="images/flag.png" alt="united kingdom flag" style="margin: 0 5px;">
+                <span>English</span>
+                <i class="fas fa-angle-down" style="margin: 0 5px"></i>
+                <ul>
+                    <li>English</li>
+                    <li>Korea</li>
+                    <li>china</li>
+                </ul>
+            </div>
+            <div>
+                <span style="color:#1bcbe6">Submit Property</span>
+            </div>    
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="header_container container">
+            <div class="logo_sec">
+                <img src="images/logo.png" alt="azenta logo">
+            </div>
+            <ul class="info_sec">
+            <li>    
+                <div class="info_img">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+                <div>
+                    <p>Phone:</p>
+                    <p>(+82) 1234 5678</p>
+                </div>
+            </li>
+            <li>
+                <div class="info_img">
+                    <i class="fas fa-map"></i>
+                </div>
+                <div>
+                    <p>Address:</p>
+                    <p>16 Creek Ave, NY</p>
+                </div>    
+                </li>
+            <li>
+                <div class="info_img">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div>
+                    <p>Email</p>
+                    <p>hyebin@gmail.com</p>
+                </div>    
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="greeting_sec">
+            <ul>
+                <li class=slide_01 >
+                    <a href="#">
+                        <div class="greeting_text">
+                            <div class="greeting_text_container" style="width:100%; margin:0 auto;">
+                            <p><i class="fas fa-map-marker-alt"></i>9721 Glen Creek Ave. Ballston Spa, Ny</p>
+                            <h2>Villa 9721 Glen Creek</h2>
+                            <p>start Form: <h3>$3.000.000</h3></p>
+                            <ul>
+                                <li>
+                                    <p><i class="fas fa-arrows-alt"></i></p>
+                                    <p>5201 sqft</p>
+                                </li>
+                                <li>
+                                    <p><i class="fas fa-bed"></i></p>
+                                    <p>8 Bed Rooms</p>
+                                </li>
+                                <li>
+                                    <p><i class="fas fa-shower"></i></p>
+                                    <p>7 Baths Bed</p>
+                                </li>
+                                <li>
+                                    <p><i class="fas fa-car"></i></p>
+                                    <p>2 Garage</p>
+                                </li>
+                            </ul>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="slide_02" style="display:none">
+                    <a href="#">
+                            <p><i class="fas fa-map-marker-alt"></i>2760 Orange County . Solla Spa, LA</p>
+                            <h2>Villa 3000 New City</h2>
+                            <p>start Form: <h3>$1.000.000</h3></p>
+                            <ul>
+                                <li>
+                                    <p><i class="fas fa-arrows-alt"></i></p>
+                                    <p>3200 sqft</p>
+                                </li>
+                                <li>
+                                    <p><i class="fas fa-bed"></i></p>
+                                    <p>4 Bed Rooms</p>
+                                </li>
+                                <li>
+                                    <p><i class="fas fa-shower"></i></p>
+                                    <p>4 Baths Bed</p>
+                                </li>
+                                <li>
+                                    <p><i class="fas fa-car"></i></p>
+                                    <p>1 Garage</p>
+                                </li>
+                            </ul>    
+                    </a>
+                </li>
+                <li class="slide_03" style="display:none">
+                    <a href="#">
+                            <p><i class="fas fa-map-marker-alt"></i>1002 Kimchi . chun Spa, Korea</p>
+                            <h2>Apartment hyebin</h2>
+                            <p>start Form: <h3>$8.000.000</h3></p>
+                            <ul>
+                                <li>
+                                    <p><i class="fas fa-arrows-alt"></i></p>
+                                    <p>566 sqft</p>
+                                </li>
+                                <li>
+                                    <p><i class="fas fa-bed"></i></p>
+                                    <p>8 Bed Rooms</p>
+                                </li>
+                                <li>
+                                    <p><i class="fas fa-shower"></i></p>
+                                    <p>1 Baths Bed</p>
+                                </li>
+                                <li>
+                                    <p><i class="fas fa-car"></i></p>
+                                    <p>8 Garage</p>
+                                </li>
+                            </ul>    
+                    </a>
+                </li>
+            </ul>
+            <div class="search_title">
+                <div class="search_container container">
+                    <div class="search_left"><i class="fas fa-search"></i>FIND YOUR HOME</div>
+                    <div class="search_right"><i class="fas fa-home"></i>HOUSE FOR SELL</div>
+                </div>
+            </div>
+        </div>
+        <ul class="search_sec container">
+            <li>
+                <select name="villa" id="villa_select">
+                    <option value="">Villa & Pool</option>
+                </select>
+            </li>
+            <li>
+                <select name="Title" id="title_select">
+                    <option value="">Title</option>
+                </select>
+            </li>
+            <li>
+                <select name="city" id="city_select">
+                    <option value="">Any city</option>
+                </select>
+            </li>
+            <li>
+                <select name="Bethroom" id="bethroom_select">
+                    <option value="">Any Bethroom</option>
+                </select>
+            </li>
+            <li>
+                <select name="bedroom" id="bedroom_select">
+                    <option value="">Any Bedroom</option>
+                </select>
+            </li>
+            <li>
+                <div class="range_container">
+                <p>price:</p>
+                <input type="range">
+                </div>
+            </li>
+            <li>
+                <div class="range_container">
+                    <p>size:</p>
+                    <input type="range">
+                </div>
+            </li>
+            <li>
+                <a href="#">Search</a>
+            </li>
+        </ul>
+    </main>
+    <footer></footer>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 부모요소에 hidden 을 줘야되고  
+        자식요소에 absolute를 줘야될때는 height의 값을 정의말고 다른경우는?
+        */
+        *{margin:0;padding:0;box-sizing: border-box;}
+        h1{color:red;}
+        h2{color: blue;}
+        h3{color:green;}
+        .box01{
+            overflow:hidden;
+        }
+        .box03{
+            position: relative;
+            height:20px;
+        }
+        
+        .box03-1{
+            position:absolute;
+        }
+        body,html{height:100%;}
+    </style>
+</head>
+<body>
+    <div class="box01">
+        <h1>hello00</h1>
+        <div class="box02">
+            <h2>BYE</h2>
+        </div>
+        <div class="box03">
+            <div class="box03-1">
+                <h3>come</h3>
+            </div>
+        </div>    
+    </div>
+    <div class="container">
+        <h1>qweqwe</h1>
+    </div>
+</body>
+</html>

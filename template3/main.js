@@ -1,3 +1,5 @@
+"use strict"
+
 const PropertiesSlider = (function(){
     const PropertieSliderBox = document.querySelector(".content04_cnt");
     const PropertieSlider = PropertieSliderBox.querySelectorAll(".content04_slider");
@@ -72,19 +74,26 @@ const FeatureSlider = (function(){
     }
     init();
 
+    const matchFeatureFirstMq = ()=>{
+        
+    }
+
+    const featureFirstMq = window.matchMedia("screen and (max-width:1040px)");
+    matchFeatureFirstMq(featureFirstMq);
+    featureFirstMq.addListener(matchFeatureFirstMq);
 }())
 
 const AgentSlider = (function(){
     const agentSliderBox = document.getElementById("agent-js");
     const agentSlider = agentSliderBox.querySelector("li");
-    const agentSliderWidth = agentSlider.offsetWidth*4 + 50;
+    const agentSliderWidth = agentSlider.offsetWidth*4 ;
 
     const rightArw = document.querySelector(".content05_right_arw");
     const leftArw = document.querySelector(".content05_left_arw");
 
 
-
-    let i = 0;
+    agentSliderBox.style.width = agentSliderWidth*2 + "px";
+    let i = 0;    
     agentSliderBox.style.left = 0;
 
     const clickRightArw = ()=>{
@@ -151,4 +160,25 @@ const GreetingSlider =(function(){
 
     setInterval(handleGreeting,3000)
     
+}())
+
+const HideNav = (function(){
+    const hideNavBox = document.getElementById("hide-js");
+    const hambuger = document.getElementById("menu");
+    const hideNav = document.getElementById("hide-container");
+    const offcanvas = document.querySelector(".offcanvas");
+    const hambugerClose = document.getElementById("hide-closeBtn");
+
+
+    const clickHambuger = ()=>{
+        hideNav.style.left = 0;
+        offcanvas.classList.add("hambuger_active");
+    }
+    const clickClose = ()=>{
+        hideNav.style.left = "-300px";
+        offcanvas.classList.remove("hambuger_active");
+    }
+
+    hambugerClose.addEventListener("click",clickClose);
+    hambuger.addEventListener("click",clickHambuger);
 }())

@@ -10,6 +10,64 @@
 </head>
 
 <body>
+    <div class="offcanvas"></div>
+    <section class="hide_nav" id="hide-js">
+        <div class="hide_container" id="hide-container">
+            <div class="hide_nav_close">
+                <i class="fas fa-times" id="hide-closeBtn"></i>
+            </div>
+            <div class="language">
+                <img src="images/flag.png" alt="united kingdom flag" style="margin: 0 5px;">
+                <span>English</span>
+                <i class="fas fa-angle-down" style="margin: 0 5px"></i>
+                <ul class="country">
+                    <li>English</li>
+                    <li>Korea</li>
+                    <li>china</li>
+                </ul>
+            </div>
+            <div class="nav_submit">
+                <span>Submit Property</span>
+            </div>
+            <ul class="main_nav">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">PROPERTY</a></li>
+            <li><a href="#">AGETS</a></li>
+            <li><a href="#">NEWS</a></li>
+            <li><a href="#">PAGES</a></li>
+            <li><a href="#">CONTACT</a></li>
+            </ul>
+            <ul class="info_sec">
+            <li>
+                <div class="info_img">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+                <div class="info_text">
+                    <p>Phone:</p>
+                    <p>(+82) 1234 5678</p>
+                </div>
+            </li>
+            <li>
+                <div class="info_img">
+                    <i class="fas fa-map"></i>
+                </div>
+                <div class="info_text">
+                    <p>Address:</p>
+                    <p>16 Creek Ave, NY</p>
+                </div>
+            </li>
+            <li>
+                <div class="info_img">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="info_text">
+                    <p>Email</p>
+                    <p>hyebin@gmail.com</p>
+                </div>
+            </li>
+            </ul>
+        </div>    
+    </section>
     <nav>
         <div class="nav_container container">
             <ul class="main_nav">
@@ -71,7 +129,13 @@
                     </div>
                 </li>
             </ul>
+            <span class="menu" id="menu">
+                <div id="bar1" class="change bar"></div>
+                <div id="bar2" class="change bar"></div>
+                <div id="bar3" class="change bar"></div>
+            </span>
         </div>
+        
     </header>
     <main>
         <div class="greeting_sec">
@@ -267,7 +331,7 @@
                 </li>
             </ul>
         </div>
-        <div class="content02">
+        <div class="content02 container-top-bottom">
             <div class="container">
                 <p class="title_p">LISTING FROM OUR AGENTS</p>
                 <h1 class="title_h1">Featured Properties</h1>
@@ -497,7 +561,7 @@
                                         <li><i class="fas fa-shower"></i>7 Bath Rooms</li>
                                         <li><i class="fas fa-car"></i>1 Garage</li>
                                     </ul>
-                                    <p style="position:absolute;bottom:0;">Contact:(+82) 82 7951</p>
+                                    <p class="contact"style="bottom:0;padding-top:30px;">Contact:(+82) 82 7951</p>
                                 </div>
                             </li>
                             <li class="content04_slider">
@@ -521,7 +585,7 @@
                                         <li><i class="fas fa-shower"></i>7 Bath Rooms</li>
                                         <li><i class="fas fa-car"></i>1 Garage</li>
                                     </ul>
-                                    <p style="position:absolute;bottom:0;margin-bottom:0;">Contact:(+82) 82 7951</p>
+                                    <p class="contact"style="bottom:0;padding-top:30px;">Contact:(+82) 82 7951</p>
                                 </div>
                             </li>
                             <li class="content04_slider">
@@ -545,7 +609,7 @@
                                         <li><i class="fas fa-shower"></i>7 Bath Rooms</li>
                                         <li><i class="fas fa-car"></i>1 Garage</li>
                                     </ul>
-                                    <p style="position:absolute;bottom:0;">Contact:(+82) 82 7951</p>
+                                    <p class="contact"style="bottom:0;padding-top:30px;">Contact:(+82) 82 7951</p>
                                 </div>
                             </li>
                         </ul>
@@ -555,7 +619,7 @@
                 </div>
             </div>
         </div>
-        <div class="content05">
+        <div class="content05 container-top-bottom">
             <div class="container">
                 <p class="title_p">WE ARE TO HELP YOU</p>
                 <h1 class="title_h1">Our Agents</h1>
@@ -563,7 +627,8 @@
                     <div class="content05_sliderbox">
                         <ul id="agent-js">
                             <li>
-                                <div class="content05_img">
+                                <div class="content05_sliderlist_box">
+                                    <div class="content05_img">
                                     <img src="images/agent/agent-1.jpg" alt="Matthew Robbins image">
                                     <div class="content05_icons">
                                         <a href="#" class="twitter">
@@ -576,12 +641,14 @@
                                             <i class="fab fa-facebook-f"></i>
                                         </a>
                                     </div>
+                                    </div>
+                                    <h2>Matthew Robbins</h2>
+                                    <p>Founder & Ceo</p>
                                 </div>
-                                <h2>Matthew Robbins</h2>
-                                <p>Founder & Ceo</p>
                             </li>
                             <li>
-                                <div class="content05_img">
+                                <div class="content05_sliderlist_box">
+                                    <div class="content05_img">
                                     <img src="images/agent/agent-2.jpg" alt="">
                                     <div class="content05_icons">
                                         <a href="#" class="twitter">
@@ -594,11 +661,13 @@
                                             <i class="fab fa-facebook-f"></i>
                                         </a>
                                     </div>
-                                </div>
+                                    </div>
                                 <h2>Tillie Burns</h2>
                                 <p>Marketing Manager</p>
+                                </div>
                             </li>
                             <li>
+                                <div class="content05_sliderlist_box">
                                 <div class="content05_img">
                                     <img src="images/agent/agent-3.jpg" alt="Derrick Leo image">
                                     <div class="content05_icons">
@@ -612,11 +681,13 @@
                                             <i class="fab fa-facebook-f"></i>
                                         </a>
                                     </div>
+                                    <h2>Derrick Leo</h2>
+                                    <p>Company Agent</p>
                                 </div>
-                                <h2>Derrick Leo</h2>
-                                <p>Company Agent</p>
+                                </div>
                             </li>
                             <li>
+                                <div class="content05_sliderlist_box">
                                 <div class="content05_img">
                                     <img src="images/agent/agent-4.jpg" alt="hyebins image">
                                     <div class="content05_icons">
@@ -633,9 +704,11 @@
                                 </div>
                                 <h2>hyebins</h2>
                                 <p>Saler Manager</p>
+                                </div>
                             </li>
                             <li>
-                                <div class="content05_img">
+                                <div class="content05_sliderlist_box">
+                                    <div class="content05_img">
                                     <img src="images/agent/agent-3.jpg" alt="Matthew Robbins image">
                                     <div class="content05_icons">
                                         <a href="#" class="twitter">
@@ -651,8 +724,10 @@
                                 </div>
                                 <h2>Matthew Robbins</h2>
                                 <p>Founder & Ceo</p>
+                                </div>
                             </li>
                             <li>
+                                <div class="content05_sliderlist_box">
                                 <div class="content05_img">
                                     <img src="images/agent/agent-4.jpg" alt="">
                                     <div class="content05_icons">
@@ -669,8 +744,10 @@
                                 </div>
                                 <h2>Tillie Burns</h2>
                                 <p>Marketing Manager</p>
+                                </div>
                             </li>
                             <li>
+                                <div class="content05_sliderlist_box">
                                 <div class="content05_img">
                                     <img src="images/agent/agent-1.jpg" alt="Derrick Leo image">
                                     <div class="content05_icons">
@@ -687,8 +764,10 @@
                                 </div>
                                 <h2>Derrick Leo</h2>
                                 <p>Company Agent</p>
+                                </div>
                             </li>
                             <li>
+                                <div class="content05_sliderlist_box">
                                 <div class="content05_img">
                                     <img src="images/agent/agent-2.jpg" alt="hyebins image">
                                     <div class="content05_icons">
@@ -705,6 +784,7 @@
                                 </div>
                                 <h2>hyebins</h2>
                                 <p>Saler Manager</p>
+                                </div>
                             </li>
                         </ul>
                     </div>

@@ -1679,4 +1679,37 @@ footer .footer_info p {
     width: 300px;
   }
 }
+
+#loading_sec{
+  width:100%;
+  height:100%;
+  position: fixed;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  z-index: 9999;
+}
+
+svg path, svg rect{
+  fill:white;
+}
+
+.hidden{
+  animation: fadeOut 1.3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut{
+  100%{
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes fadeOut{
+  100%{
+      opacity: 0;
+      visibility: hidden;
+  }
+}
 /*# sourceMappingURL=style.css.map */

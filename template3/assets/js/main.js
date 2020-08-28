@@ -1,5 +1,10 @@
 "use strict"
 
+const Loading = (function(){
+    const loading = document.getElementById(`loading_sec`);
+    window.addEventListener("load",()=>{loading.classList.add(`hidden`)});
+}())
+
 const GreetingSlider =(function(){
     const greetingBox = document.getElementById("greeting-js");
     const greetingList = greetingBox.querySelectorAll(".greeting_slider_list");

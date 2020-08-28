@@ -41,8 +41,6 @@ const Thumbnail = (function(){
     const clickImg = ()=>{
         let number = event.target.dataset.num;
         let parseNum = parseInt.number;
-        console.log(number);
-        console.log(parseNum);
         thumbMain.src = `images/properties/property-details-b${number}.jpg`
     }
 
